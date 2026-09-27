@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Run outputs. README figures live in assets/ and are tracked.
+results/
+outputs/
+runs/
+wandb/
+checkpoints/
+*.log
+
+# Weights and round logs. The measured summaries in data/ are tracked.
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+
+# Secrets and local settings
+.env
+.DS_Store
+.vscode/
+.idea/

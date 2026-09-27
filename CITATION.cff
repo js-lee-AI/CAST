@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "CAST: code for Cost-Aware Speculative Trees from One-Pass Block Drafters"
+type: software
+authors:
+  - family-names: Lee
+    given-names: Jungseob
+  - family-names: "Eo"
+    given-names: "Sugyeong"
+repository-code: "https://github.com/js-lee-AI/CAST"
+license: MIT
+version: "0.1.0"
+date-released: "2026-09-28"
+keywords:
+  - "speculative decoding"
+  - "tree verification"
+  - "block drafter"
+preferred-citation:
+  type: article
+  title: "CAST: Cost-Aware Speculative Trees from One-Pass Block Drafters"
+  authors:
+    - family-names: Lee
+      given-names: Jungseob
+    - family-names: "Eo"
+      given-names: "Sugyeong"
+  year: 2026

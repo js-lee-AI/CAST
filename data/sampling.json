@@ -1,0 +1,60 @@
+{
+ "blackwell_qwen3-8b": {
+  "gpu": "Blackwell",
+  "target": "Qwen/Qwen3-8B",
+  "drafter": "z-lab/Qwen3-8B-DFlash-b16",
+  "temperature": 1.0,
+  "n_star": 63,
+  "prompts": 40,
+  "max_new": 256,
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "domains": {
+   "gsm8k": {
+    "dflash_ms": [
+     4.80892,
+     4.98419,
+     4.84261
+    ],
+    "cast_ms": [
+     4.14709,
+     4.22219,
+     4.17623
+    ],
+    "dflash_R": 5.69746,
+    "cast_R": 7.53919
+   },
+   "mtbench": {
+    "dflash_ms": [
+     9.30238,
+     9.36085,
+     9.62947
+    ],
+    "cast_ms": [
+     7.20046,
+     7.27404,
+     7.27928
+    ],
+    "dflash_R": 3.68562,
+    "cast_R": 5.09947
+   },
+   "humaneval": {
+    "dflash_ms": [
+     5.09139,
+     5.11121,
+     5.13075
+    ],
+    "cast_ms": [
+     4.19475,
+     4.07987,
+     4.26565
+    ],
+    "dflash_R": 5.66211,
+    "cast_R": 7.71755
+   }
+  }
+ }
+}

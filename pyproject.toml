@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cast-trees"
+dynamic = ["version"]
+description = "Cost-aware speculative trees from one-pass block drafters"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Jungseob Lee" }]
+keywords = ["speculative decoding", "tree verification", "block drafter", "DFlash", "LLM inference"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+# The core runs on numpy alone, so `import cast_trees` works on any laptop.
+# Torch comes in with the decode extra and loads on first use.
+dependencies = ["numpy>=1.23"]
+
+[project.optional-dependencies]
+decode = [
+    "torch>=2.9",
+    "transformers>=5.6",
+    "datasets",
+    "triton",
+    "dflash @ git+https://github.com/z-lab/dflash.git@94e4abc5e0c31b67bc1a9d30f1cc34ece28a8756",
+]
+test = ["pytest>=8"]
+
+[project.scripts]
+cast-trees = "cast_trees.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/js-lee-AI/CAST"
+Issues = "https://github.com/js-lee-AI/CAST/issues"
+
+[tool.setuptools.dynamic]
+version = { attr = "cast_trees.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["cast_trees*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["gpu: needs a CUDA device and the decode extra"]
+addopts = "-m 'not gpu'"
