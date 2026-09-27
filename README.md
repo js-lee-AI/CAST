@@ -1,14 +1,8 @@
 <p align="center">
-  <img src="assets/banner.png" width="100%" alt="CAST, verify more of what the block drafter already scored" />
+  <img src="assets/banner.png" width="100%" alt="CAST, cost-aware speculative trees from one-pass block drafters" />
 </p>
 
 <div align="center">
-
-# CAST
-
-### Verify more of what the block drafter already scored
-
-<em>Cost-Aware Speculative Trees from One-Pass Block Drafters</em>
 
 [![Code MIT](https://img.shields.io/badge/Code-MIT-green.svg)](LICENSE)
 [![Paper CC BY 4.0](https://img.shields.io/badge/Paper-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
