@@ -17,7 +17,7 @@
 </div>
 
 <p align="center">
-  <a href="https://js-lee-ai.github.io/CAST/#race"><img src="assets/replay.gif" width="88%" alt="Four decoders each write a 256-token answer to one HumanEval prompt with Qwen3-8B on one H100. CAST finishes in 0.92 s, DFlash in 1.56 s, EAGLE-3 in 2.32 s and autoregressive decoding in 7.38 s" /></a>
+  <a href="https://js-lee-ai.github.io/CAST/#race"><img src="assets/replay.gif" width="100%" alt="Four decoders each write the same 256-token answer to one HumanEval prompt with Qwen3-8B on one H100. CAST finishes in 0.93 s, DFlash in 1.33 s, EAGLE-3 in 2.26 s and autoregressive decoding in 7.37 s" /></a>
 </p>
 
 <p align="center"><em>Qwen3-8B on one H100. The <a href="https://js-lee-ai.github.io/CAST/#race">project page</a> replays it live.</em></p>
