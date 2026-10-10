@@ -17,10 +17,10 @@
 </div>
 
 <p align="center">
-  <a href="https://js-lee-ai.github.io/CAST/#race"><img src="assets/replay.gif" width="88%" alt="Four decoders write the same 256-token answer to one HumanEval prompt with Qwen3-8B on one RTX A6000. CAST finishes in 1.02 s, DFlash in 1.22 s, EAGLE-3 in 3.01 s and autoregressive decoding in 8.17 s" /></a>
+  <a href="https://js-lee-ai.github.io/CAST/#race"><img src="assets/replay.gif" width="88%" alt="Four decoders each write a 256-token answer to one HumanEval prompt with Qwen3-8B on one RTX A6000. CAST finishes in 1.33 s, DFlash in 2.49 s, EAGLE-3 in 3.87 s and autoregressive decoding in 8.10 s" /></a>
 </p>
 
-<p align="center"><em>Recorded runs on one HumanEval prompt, replayed in real time, with Qwen3-8B in bf16 at batch 1 on one RTX A6000 (greedy decoding, 256 new tokens). The prompt is one of the 164 HumanEval problems, chosen as a case where CAST is especially fast, and these runs are not among the paper's results, whose averages are in <a href="#results">Results</a>. The <a href="https://js-lee-ai.github.io/CAST/#race">project page</a> replays it live.</em></p>
+<p align="center"><em>Qwen3-8B on one RTX A6000. The <a href="https://js-lee-ai.github.io/CAST/#race">project page</a> replays it live.</em></p>
 
 ---
 
